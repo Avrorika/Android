@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.design.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_weight="1"
+        android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/title"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLeft"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_marginEnd="@dimen/marginRight"
+            android:textStyle="bold"
+            android:layout_weight="1"
+            android:text="@string/title"
+            android:textSize="@dimen/titleSize" />
+
+        <Button
+            android:id="@+id/buttonAndroid"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_marginStart="@dimen/marginLeft"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_weight="1"
+            android:background="@color/colorPrimaryDark"
+            android:text="@string/android" />
+
+        <TextView
+            android:id="@+id/description"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="@dimen/marginLeft"
+            android:layout_marginTop="@dimen/marginTop"
+            android:layout_marginEnd="@dimen/marginRight"
+            android:layout_weight="3"
+            android:text="@string/description"
+            android:textSize="@dimen/bodyTextSize" />
+
+        <Button
+            android:id="@+id/buttonReports"
+            android:layout_width="@dimen/buttonWidth"
+            android:layout_height="@dimen/buttonHeight"
+            android:layout_marginStart="@dimen/marginLeft"
+            android:layout_marginBottom="@dimen/marginBottom"
+            android:layout_weight="1"
+            android:background="@color/colorAccent"
+            android:text="@string/reports" />
+    </LinearLayout>
+
+</android.support.design.widget.CoordinatorLayout>
